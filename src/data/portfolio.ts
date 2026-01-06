@@ -190,7 +190,7 @@ export const portfolioData = {
     leadership: [
         {
             role: "Finance Coordinator",
-            organization: "BITS Pilani",
+            organization: "BITS",
             image: "/BITS.jpeg",
             description: "Managed budgeting and financial planning for student-led initiatives and institutional events. Coordinated with multiple stakeholders to track expenses, approvals, and fund utilization. Ensured transparency, compliance, and efficient allocation of financial resources. Developed strong skills in financial coordination, reporting, and cross-team collaboration."
         },

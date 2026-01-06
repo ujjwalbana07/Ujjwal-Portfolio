@@ -24,10 +24,10 @@ export default function Home() {
           <About />
           <Experience />
           <Projects />
+          <Certifications />
           <Education />
           <Skills />
           <Leadership />
-          <Certifications />
           <Contact />
         </main>
         <Footer />
