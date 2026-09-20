@@ -44,7 +44,7 @@ export function Hero() {
                         <h1 className="text-5xl md:text-7xl font-bold font-outfit tracking-tight text-white mb-2">
                             {portfolioData.hero.name}
                         </h1>
-                        <p className="text-xl md:text-2xl text-muted-foreground/80 font-light">
+                        <p className="text-lg sm:text-xl md:text-2xl text-slate-300 font-light">
                             {portfolioData.hero.title}
                         </p>
                     </motion.div>
@@ -62,7 +62,7 @@ export function Hero() {
                     </motion.div>
 
                     <motion.p
-                        className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+                        className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4 }}

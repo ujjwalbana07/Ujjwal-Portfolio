@@ -1,8 +1,8 @@
 export const portfolioData = {
     hero: {
         name: "Ujjwal Bana",
-        title: "MS-MIS @ Texas A&M University | Former Associate Consultant at Oracle",
-        tagline: "Building data pipelines, distributed systems, and applied AI.",
+        title: "MS MIS @ Texas A&M | Ex-Oracle",
+        tagline: "Building agentic systems with LangGraph and RAG pipelines, from trading infrastructure to autonomous workflows",
         cta: "View My Work",
     },
     about: {
