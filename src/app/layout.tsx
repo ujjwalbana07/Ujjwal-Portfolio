@@ -15,16 +15,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ujjwal Bana | Data Engineering & Applied AI",
+  title: "Ujjwal Bana | Portfolio",
   openGraph: {
-    title: "Ujjwal Bana | Data Engineering & Applied AI",
+    title: "Ujjwal Bana | Portfolio",
     description: "Data pipelines, distributed systems, and applied AI. Explore my projects and engineering experience.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary",
-    title: "Ujjwal Bana | Data Engineering & Applied AI",
+    title: "Ujjwal Bana | Portfolio",
     description: "Data pipelines, distributed systems, and applied AI.",
   },
   description: "Ujjwal Bana, MS-MIS student at Texas A&M and former Oracle consultant. Explore projects in data engineering, distributed systems, RAG, and agentic AI.",
