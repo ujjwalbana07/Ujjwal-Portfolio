@@ -1,6 +1,6 @@
 "use client";
 
-import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
+import { useMotionTemplate, useMotionValue, motion, MotionConfig } from "framer-motion";
 import React, { MouseEvent } from "react";
 
 export const MouseSpotlight = ({
@@ -20,6 +20,7 @@ export const MouseSpotlight = ({
     }
 
     return (
+        <MotionConfig reducedMotion="user">
         <div
             className={`relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-black ${className}`}
             onMouseMove={handleMouseMove}
@@ -41,5 +42,6 @@ export const MouseSpotlight = ({
             </div>
             <div className="relative z-10 w-full">{children}</div>
         </div>
+        </MotionConfig>
     );
 };

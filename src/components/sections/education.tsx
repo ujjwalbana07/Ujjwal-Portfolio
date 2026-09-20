@@ -2,10 +2,9 @@
 
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
-import { GraduationCap, Calendar, MapPin } from "lucide-react";
+import { GraduationCap, Calendar } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { Card } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 
 export function Education() {
     return (

@@ -15,8 +15,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ujjwal Bana | System Analyst & Consultant",
-  description: "Portfolio of Ujjwal Bana - MS-MIS Candidate at Texas A&M University & Associate Consultant at Oracle. Specializing in Systems Analysis, Data Analytics, and IT Consulting.",
+  title: "Ujjwal Bana | Data Engineering & Applied AI",
+  openGraph: {
+    title: "Ujjwal Bana | Data Engineering & Applied AI",
+    description: "Data pipelines, distributed systems, and applied AI. Explore my projects and engineering experience.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: "Ujjwal Bana | Data Engineering & Applied AI",
+    description: "Data pipelines, distributed systems, and applied AI.",
+  },
+  description: "Ujjwal Bana, MS-MIS student at Texas A&M and former Oracle consultant. Explore projects in data engineering, distributed systems, RAG, and agentic AI.",
 };
 
 export default function RootLayout({

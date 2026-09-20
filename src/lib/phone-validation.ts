@@ -26,7 +26,7 @@ export function formatPhoneNumber(phoneNumber: string, countryCode?: CountryCode
         if (phoneNumberObj && phoneNumberObj.isValid()) {
             return phoneNumberObj.formatInternational();
         }
-    } catch (error) {
+    } catch {
         // Return original if parsing fails
     }
 

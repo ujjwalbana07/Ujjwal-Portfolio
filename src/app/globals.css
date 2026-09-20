@@ -147,3 +147,23 @@
 .glass-card {
   @apply bg-card/30 backdrop-blur-md border border-white/5 hover:border-primary/30 transition-all duration-300;
 }
+section[id], main[id] {
+  scroll-margin-top: 6rem;
+}
+
+:focus-visible {
+  outline: 2px solid #c4b5fd;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

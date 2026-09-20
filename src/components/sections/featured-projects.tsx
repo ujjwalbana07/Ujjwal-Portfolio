@@ -14,10 +14,10 @@ export function FeaturedProjects() {
                     Featured Work
                 </Badge>
                 <h2 className="text-4xl md:text-5xl font-bold font-outfit text-white text-center">
-                    Flagship <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Projects</span>.
+                    Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Projects</span>
                 </h2>
                 <p className="text-muted-foreground text-center max-w-2xl">
-                    Production-grade systems built with deep engineering rigor and domain expertise.
+                    Projects spanning distributed systems, agentic AI, and decision-support applications.
                 </p>
             </div>
 
@@ -38,7 +38,7 @@ export function FeaturedProjects() {
                             {/* Header */}
                             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                                 <div className="space-y-2">
-                                    <div className="flex items-center gap-3">
+                                    <div className="flex flex-wrap items-center gap-3">
                                         <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-primary/30">
                                             {project.title.charAt(0)}
                                         </div>
@@ -104,7 +104,7 @@ export function FeaturedProjects() {
                                 </div>
 
                                 {/* Mobile links + View Project CTA */}
-                                <div className="flex items-center gap-3">
+                                <div className="flex flex-wrap items-center gap-3">
                                     {/* Mobile-only quick links */}
                                     <a
                                         href={project.liveDemo}

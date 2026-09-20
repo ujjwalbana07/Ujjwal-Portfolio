@@ -20,8 +20,9 @@ export default function Home() {
         {/* Optional: Add a subtle grid here if we want more texture */}
       </div>
       <div className="relative z-10 w-full flex flex-col">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:text-black">Skip to content</a>
         <Header />
-        <main className="flex-1">
+        <main id="main-content" tabIndex={-1} className="flex-1">
           <Hero />
           <About />
           <Experience />

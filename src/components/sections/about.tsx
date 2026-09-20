@@ -2,12 +2,9 @@
 
 import { portfolioData } from "@/data/portfolio";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
-import { Card } from "@/components/ui/card";
-import { BrainCircuit, Database, FileBarChart2 } from "lucide-react";
 import Image from "next/image";
 
 export function About() {
-    const icons = [BrainCircuit, Database, FileBarChart2];
 
     return (
         <SectionWrapper id="about" className="py-20 bg-secondary/20">
@@ -18,17 +15,21 @@ export function About() {
                         <h2 className="text-3xl md:text-5xl font-bold font-outfit text-white tracking-tight mb-6">
                             {portfolioData.about.title}
                         </h2>
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                            {portfolioData.about.description}
-                        </p>
+                        <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
+                            {portfolioData.about.description.split(/ (?=Before graduate school|My role as Finance Coordinator)/).map((paragraph) => (
+                                <p key={paragraph}>{paragraph}</p>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
                 {/* Right Column: Image */}
                 <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
-                    <img
+                    <Image
                         src="/tamu_first_day.jpeg"
+                        fill
+                        sizes="(min-width: 768px) 50vw, 100vw"
                         alt="Texas A&M University"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />

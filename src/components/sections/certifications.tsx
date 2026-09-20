@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { Award, ExternalLink, CheckCircle2 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 export function Certifications() {
     return (
@@ -37,11 +36,12 @@ export function Certifications() {
     );
 }
 
-function CertificationCard({ cert, index }: { cert: any, index: number }) {
+function CertificationCard({ cert, index }: { cert: (typeof portfolioData.certifications)[number], index: number }) {
     return (
         <a
             href={cert.link}
             target="_blank"
+            rel="noopener noreferrer"
             className="block group h-[400px] perspective-1000"
         >
             <motion.div
@@ -71,13 +71,13 @@ function CertificationCard({ cert, index }: { cert: any, index: number }) {
                         Issued by {cert.issuer}
                     </p>
 
-                    <div className="mt-auto opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0 flex items-center gap-2 text-purple-400 text-sm font-bold">
+                    <div className="mt-auto opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0 group-focus-visible:translate-y-0 flex items-center gap-2 text-purple-400 text-sm font-bold">
                         Verify Credential <ExternalLink className="w-4 h-4" />
                     </div>
                 </div>
 
                 {/* Hover Reveal Overlay (Knowledge Gained) */}
-                <div className="absolute inset-0 bg-[#0f172a] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-30 flex flex-col p-8 transform translate-y-4 group-hover:translate-y-0">
+                <div className="absolute inset-0 bg-[#0f172a] opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-30 flex flex-col p-8 transform translate-y-4 group-hover:translate-y-0 group-focus-visible:translate-y-0">
                     <h4 className="text-sm font-bold uppercase tracking-widest text-purple-400 mb-6 border-b border-white/10 pb-2">
                         Knowledge Gained
                     </h4>

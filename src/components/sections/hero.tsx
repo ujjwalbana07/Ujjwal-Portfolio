@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
-import { ArrowRight, MousePointer2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { Badge } from "@/components/ui/badge";
 
@@ -78,7 +78,7 @@ export function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                 >
-                    <a href="#projects" className="group flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(var(--primary),0.4)] hover:shadow-[0_0_50px_rgba(var(--primary),0.6)] hover:-translate-y-1">
+                    <a href="#featured" className="group flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(var(--primary),0.4)] hover:shadow-[0_0_50px_rgba(var(--primary),0.6)] hover:-translate-y-1">
                         {portfolioData.hero.cta}
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>

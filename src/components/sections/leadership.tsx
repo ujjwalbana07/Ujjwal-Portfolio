@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { Users, Building2 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 export function Leadership() {
     return (

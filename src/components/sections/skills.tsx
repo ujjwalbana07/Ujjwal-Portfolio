@@ -12,9 +12,9 @@ import {
     Building2,
     TrendingUp
 } from "lucide-react";
-import { cn } from "@/lib/utils";
+import type { LucideIcon } from "lucide-react";
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, LucideIcon> = {
     "Terminal": Terminal,
     "Monitor": Monitor,
     "Server": Server,
@@ -36,10 +36,10 @@ export function Skills() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 mb-4 tracking-tight">
-                        Technical Arsenal
+                        Technical Skills
                     </h2>
                     <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                        A comprehensive breakdown of my expertise across the full stack of enterprise development.
+                        Tools and technologies I use across data pipelines, distributed services, and AI applications.
                     </p>
                 </motion.div>
 

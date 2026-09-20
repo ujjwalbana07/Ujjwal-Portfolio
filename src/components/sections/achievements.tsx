@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
-import { Trophy, Sparkles, ArrowUpRight } from "lucide-react";
+import { Trophy, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 

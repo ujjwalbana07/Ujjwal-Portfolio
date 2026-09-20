@@ -11,7 +11,7 @@ export function Contact() {
                 Let&apos;s Connect
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-                I&apos;m always open to discussing system analysis, enterprise solutions, or potential opportunities.
+                Let&apos;s talk about data engineering, distributed systems, applied AI, or opportunities to build useful software together.
             </p>
 
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
